@@ -88,6 +88,10 @@ Additionally, you can receive real-time support by joining FlagBrew's Discord se
 
 devkitARM and devkitA64 are required to compile Checkpoint for 3DS and Switch, respectively. Learn more at [devkitpro.org](https://devkitpro.org/wiki/Getting_Started). Install or update dependencies as follows.
 
+You will also want to add [bannertool](https://github.com/Steveice10/bannertool/releases/tag/1.2.0) and [MakeROM](https://github.com/3DSGuy/Project_CTR/releases/tag/makerom-v0.18.3) to your path so the build does not error. (Pretty sure this is optional but it doesn't hurt to have)
+
+General info about this fork, build on windows, and I just added bannertool and makerom to the devkitPro tools>bin folder. This adds it to the path when building homebrew software.
+
 ### 3DS version
 
 `dkp-pacman -S libctru citro3d citro2d`
