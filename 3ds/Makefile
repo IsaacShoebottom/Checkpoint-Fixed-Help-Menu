@@ -197,9 +197,9 @@ clean:
 cheats:
 	@mkdir -p $(BUILD) $(ROMFS)/$(CHEATS)
 ifeq ($(OS),Windows_NT)
-	@cd $(SHARKIVE) && py -3 joiner.py 3ds
+	@cd $(SHARKIVE) && python joiner.py 3ds
 else
-	@cd $(SHARKIVE) && python3 joiner.py 3ds
+	@cd $(SHARKIVE) && python joiner.py 3ds
 endif
 	@cd $(SHARKIVE)/$(BUILD) && mv 3ds.json.bz2 ../../3ds/$(ROMFS)/$(CHEATS)/$(CHEATS).json.bz2
 #---------------------------------------------------------------------------------
